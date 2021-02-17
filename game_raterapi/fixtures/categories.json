@@ -1,0 +1,23 @@
+[
+    {
+        "model": "game_raterapi.category",
+        "pk": 1,
+        "fields": {
+            "label": "Co-op"
+        }
+    },
+    {
+        "model": "game_raterapi.category",
+        "pk": 2,
+        "fields": {
+            "label": "Role-playing game"
+        }
+    },
+    {
+        "model": "game_raterapi.category",
+        "pk": 3,
+        "fields": {
+            "label": "Betrayer"
+        }
+    }
+]

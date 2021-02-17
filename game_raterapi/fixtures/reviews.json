@@ -1,0 +1,29 @@
+[
+    {
+        "model": "game_raterapi.review",
+        "pk": 1,
+        "fields": {
+            "rater": 1,
+            "game": 1,
+            "content": "Great, you can play over and over and never play the same ending."
+        }
+    },
+    {
+        "model": "game_raterapi.review",
+        "pk": 2,
+        "fields": {
+            "rater": 1,
+            "game": 2,
+            "content": "It's unwittingly intense, the game constantly throws challenges every turn."
+        }
+    },
+    {
+        "model": "game_raterapi.review",
+        "pk": 3,
+        "fields": {
+            "rater": 1,
+            "game": 3,
+            "content": "One  of my favorites! The tensions grows with every round as you and your so-called friends try to survive!"
+        }
+    }
+]

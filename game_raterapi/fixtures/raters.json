@@ -1,0 +1,10 @@
+[
+    {
+        "model": "game_raterapi.rater",
+        "pk": 1,
+        "fields": {
+            "user": 1,
+            "bio": "It'sa me!"
+        }
+    }
+]

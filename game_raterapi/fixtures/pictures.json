@@ -1,0 +1,29 @@
+[
+    {
+        "model": "game_raterapi.picture",
+        "pk": 1,
+        "fields": {
+            "rater": 1,
+            "game": 1,
+            "image": "https://images-na.ssl-images-amazon.com/images/I/81%2BpgZf%2B7PL._AC_SL1500_.jpg"
+        }
+    },
+    {
+        "model": "game_raterapi.picture",
+        "pk": 2,
+        "fields": {
+            "rater": 1,
+            "game": 2,
+            "image": "https://cf.geekdo-images.com/6BBJr3Ch9NDKJIyzqKrhOg__opengraph/img/Zk3nnbI0alxcR-EdSDUdKSuv45c=/fit-in/1200x630/filters:strip_icc()/pic3279087.jpg"
+        }
+    },
+    {
+        "model": "game_raterapi.picture",
+        "pk": 3,
+        "fields": {
+            "rater": 1,
+            "game": 3,
+            "image": "https://images-na.ssl-images-amazon.com/images/I/81LWvhGlPZL._AC_SY355_.jpg"
+        }
+    }
+]
