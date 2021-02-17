@@ -9,3 +9,10 @@ class Game(models.Model):
     number_of_players = models.IntegerField()
     estimated_time = models.TimeField(auto_now=False, auto_now_add=False)
     age_recommendation = models.IntegerField()
+    @property
+    def category(self):
+        return self.__category
+
+    @category.setter
+    def category(self, value):
+        self.__category = value
