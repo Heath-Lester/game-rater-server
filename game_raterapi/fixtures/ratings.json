@@ -3,7 +3,7 @@
         "model": "game_raterapi.rating",
         "pk": 1,
         "fields": {
-            "gamer": 1,
+            "rater": 1,
             "game": 1,
             "rating": 5
         }
@@ -12,7 +12,7 @@
         "model": "game_raterapi.rating",
         "pk": 2,
         "fields": {
-            "gamer": 1,
+            "rater": 1,
             "game": 2,
             "rating": 4
         }
@@ -21,7 +21,7 @@
         "model": "game_raterapi.rating",
         "pk": 3,
         "fields": {
-            "gamer": 1,
+            "rater": 1,
             "game": 3,
             "rating": 5
         }

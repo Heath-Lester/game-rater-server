@@ -7,7 +7,7 @@
             "description": "Board Game with betrayer mechanic",
             "year_released": 2004,
             "number_of_players": 6,
-            "estimated_time": 60,
+            "estimated_time": "1:00:00",
             "age_recommendation": 12
         }
     },
@@ -19,7 +19,7 @@
             "description": "Si-fi, co-op boardgame ",
             "year_released": 2014,
             "number_of_players": 7,
-            "estimated_time": 90,
+            "estimated_time": "1:30:00",
             "age_recommendation": 14
         }
     },
@@ -31,7 +31,7 @@
             "description": "Co-op board game with betrayer mechanic",
             "year_released": 2014,
             "number_of_players": 5,
-            "estimated_time": 120,
+            "estimated_time": "2:00:00",
             "age_recommendation": 13
         }
     }
