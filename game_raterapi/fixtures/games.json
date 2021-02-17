@@ -1,0 +1,38 @@
+[
+    {
+        "model": "game_raterapi.game",
+        "pk": 1,
+        "fields": {
+            "title": "Betrayal at House on the Hill",
+            "description": "Board Game with betrayer mechanic",
+            "year_released": 2004,
+            "number_of_players": 6,
+            "estimated_time": 60,
+            "age_recommendation": 12
+        }
+    },
+    {
+        "model": "game_raterapi.game",
+        "pk": 2,
+        "fields": {
+            "title": "The Captain is Dead",
+            "description": "Si-fi, co-op boardgame ",
+            "year_released": 2014,
+            "number_of_players": 7,
+            "estimated_time": 90,
+            "age_recommendation": 14
+        }
+    },
+    {
+        "model": "game_raterapi.game",
+        "pk": 3,
+        "fields": {
+            "title": "Dead of Winter",
+            "description": "Co-op board game with betrayer mechanic",
+            "year_released": 2014,
+            "number_of_players": 5,
+            "estimated_time": 120,
+            "age_recommendation": 13
+        }
+    }
+]

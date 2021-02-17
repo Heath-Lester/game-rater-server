@@ -1,0 +1,26 @@
+[
+    {
+        "model": "game_raterapi.game_category",
+        "pk": 1,
+        "fields": {
+            "game": 1,
+            "category": 1
+        }
+    },
+    {
+        "model": "game_raterapi.game_category",
+        "pk": 2,
+        "fields": {
+            "game": 2,
+            "category": 2
+        }
+    },
+    {
+        "model": "game_raterapi.game_category",
+        "pk": 3,
+        "fields": {
+            "game": 3,
+            "category": 3
+        }
+    }
+]
