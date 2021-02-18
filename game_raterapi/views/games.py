@@ -4,7 +4,6 @@ from django.core.exceptions import ValidationError
 from django.http import HttpResponseServerError
 from rest_framework import status
 from rest_framework.decorators import action
-from django.http import HttpResponseServerError
 from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from rest_framework import serializers
@@ -81,6 +80,7 @@ class Games(ViewSet):
         # Do mostly the same thing as POST, but instead of
         # creating a new instance of Game, get the game record
         # from the database whose primary key is `pk`
+        game = Game.objects.get(pk=pk)
         game.rater = rater
         game.title = request.data["title"]
         game.description = request.data["description"]
@@ -121,10 +121,16 @@ class Games(ViewSet):
         games = Game.objects.all()
         categories = Category.objects.all()
 
-        # Support filtering games by type
-        #    http://localhost:8000/games?type=1
-        #
-        # That URL will retrieve all tabletop games
+        for game in games:
+            game.categories = None
+
+            try:
+                Game_Category.objects.get(game=game, categories=categories)
+                game.category = categories.label
+            except Game_Category.DoesNotExist:
+                game.category = None
+
+
         category = self.request.query_params.get('category', None)
         if category is not None:
             games = games.filter(category__id=category)
@@ -148,7 +154,7 @@ class Games(ViewSet):
 
             try:
                 # Determine if the user is already signed up
-                categorization = game_category.objects.get(
+                categorization = Game_Category.objects.get(
                     game=game, category=category)
                 return Response(
                     {'message': 'Category is already assigned'},
@@ -172,4 +178,5 @@ class GameSerializer(serializers.ModelSerializer):
     """
     class Meta:
         model = Game
-        fields = ('id', 'title', 'description', 'year_released', 'number_of_players', 'estimated_time', 'age_recommendation')
+        fields = ('id', 'title', 'description', 'year_released', 'number_of_players', 'estimated_time', 'age_recommendation', 'category')
+        depth = 1

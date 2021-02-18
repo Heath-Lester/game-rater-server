@@ -18,10 +18,11 @@ from django.contrib import admin
 from django.urls import path
 from game_raterapi.views import register_user, login_user
 from rest_framework import routers
-from game_raterapi.views import Games
+from game_raterapi.views import Games, Categories
 
 router = routers.DefaultRouter(trailing_slash=False)
 router.register(r'games', Games, 'game')
+router.register(r'categories', Categories, 'category')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
